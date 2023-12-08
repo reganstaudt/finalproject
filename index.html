@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Hate Crimes</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+</head>
+
+<body>
+  <article>
+<header>
+    <h1>Top 10 States with the Most Hate Crime per capita in 2022</h1>
+    <p>In the cards below you will find maps with the states in the U.S. that have the highest hate crimes per capita. Each card has the state, the total number of hate crimes, per capita, state population, and what categories the crimes fell into. </p>
+</header>
+
+    <div id="container">
+      <main class="grid"></main>
+
+     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card" style="grid-area: card1;">
+              <div class="card-body">
+                <h5 class="card-title">#1 Washington D.C</h5>
+                <div id="map1" class="map-container"></div>
+                <p class="card-text">
+                  Washington D.C. has the highest hate crime rate per capita in the U.S.
+                  For every 100,000 people in D.C. there are 22.5 hate crimes.
+                  D.C. has a population of 671,805. Washington D.C. had 151 hate crimes last year.
+                  Of those 151, 71 were racially motivated, 52 were based on sexual orientation,
+                  23 gender identity, 4 based on religion, and 1 on disability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="card" style="grid-area: card2;">
+              <div class="card-body">
+                <h5 class="card-title">#2 New Jersey</h5>
+                <div id="map2" class="map-container"></div>
+                <p class="card-text">New Jeresy has the second highest hate crime in the U.S. For every 100,000 people in New Jeresy there are 11.9 hate crimes. New Jersey has a population of over 9 million. New Jersey had 1,101 hate crimes. 574 were racial bias, 213 were regliously motivated, 136 multiple bias, 130 sexual orientation, 43 gender identity, and 5 disability. </p>
+              </div>
+            </div>
+          </div>
+
+
+  <div class="card" style="grid-area: card3;">
+ 
+    <div class="card-body">
+      <h5 class="card-title">#3 Vermont </h5>
+      <p class="card-text"> Vermont has the third highest hate crime in the U.S. For every 100,000 people in Vermont there are 7.6 hate crimes. Vermont has a population of 647,064. Vermont had 49 hate crimes in 2022. 32 were racially bias, 11 sexual orientation, 5 based on religion, and 1 from disability.  </p>
+    </div>
+  </div>
+
+  <div class="card" style="grid-area: card4;">
+
+    <div class="card-body">
+      <h5 class="card-title">#4 Oregon  </h5>
+      <p class="card-text"> Oregon has the fourth highest hate crime in the U.S. For every 100,000 people in Oregon there are 6.82 hate crimes. Oregon has a population of over 4 million. Oregon had 289 hate crimes. 174 were race related, 53 sexual orientation, 28 based on religion, 14 multiple bias, 10 gender identity, 6 based on gender, and 4 disability. </p>
+    </div>
+  </div>
+
+  <div class="card" style="grid-area: card5;">
+   
+    <div class="card-body">
+      <h5 class="card-title">#5 Washington </h5>
+      <p class="card-text"> Washington has the fifth highest hate crime in the U.S. For every 100,000 people in Washington there are 6.8 hate crimes. Washington has a population of just under 8 million. They had 529 hate crimes in 2022. 336 race based, 82 sexual orientation, 48 relgion, 28 gender identity, 21 multiple bias, gender had 9, and disabilty accounted for 5 hate crimes. </p>
+    </div>
+  </div>
+
+  <div class="card" style="grid-area: card6;">
+ 
+    <div class="card-body">
+      <h5 class="card-title">#6 Massachusetts </h5>
+      <p class="card-text"> Massachusetts has the sixth highest hate crime in the U.S. For every 100,000 people in Massachusetts there are 6.2 hate crimes. Massachusetts has a population of just under 7 million. The state had 433 hate crimes. 222 race based, 84 were relgious crimes, 79 sexual orientation, 25 mulitple bias, 21 gender identity, and 2 from gender. </p>
+    </div>
+  </div>
+
+  <div class="card" style="grid-area: card7;">
+
+    <div class="card-body">
+      <h5 class="card-title">#7 Maine</h5>
+      <p class="card-text"> Maine has the seventh highest hate crime in the U.S. For every 100,000 people in Maine there are 5.9 hate crimes. Maine has a population of 1.3 million. Maine had 81 hate crimes. 36 crimes based on race, 22 sexual orientation, 11 based on religion, 7 gender identity, 3 for gender, 2 for disability. </p>
+    </div>
+  </div>
+
+  <div class="card" style="grid-area: card8;">
+  
+    <div class="card-body">
+      <h5 class="card-title">#8 Colorado  </h5>
+      <p class="card-text"> Colorado has the eighth highest hate crime in the U.S. For every 100,000 people in Colorado there are 5.4 hate crimes. Colorado has a population of just under 6 million. Colorado had 317 hate crimes in 2022. 182 were racial bias, 68 sexual orientation, 38 religion, 20 gender identity, 5 multiple bias, and 4 from disability.</p>
+    </div>
+  </div>
+
+  <div class="card" style="grid-area: card9;">
+
+    <div class="card-body">
+      <h5 class="card-title">#9 California </h5>
+      <p class="card-text"> California has the ninth highest hate crime in the U.S. For every 100,000 people in California there are 5.4 hate crimes. California has a population of 39 million. California had 2,086 hate crimes in the last year. 1,272 were racially motivated, 391 for sexual orientation, 299 religion, 69 gender identity, 31 for multiple bias, 13 for gender, 11 for disability. </p>
+    </div>
+  </div>
+
+  <div class="card" style="grid-area: card10;">
+    <div class="card-body">
+      <h5 class="card-title">#10 New York </h5>
+      <p class="card-text"> New York has the tenth highest hate crime in the U.S. For every 100,000 people in New York there are 4.8 hate crimes. New York has a population of just under 20 million. New York had 935 hate crimes in 2022. New York was the first state out of the top ten to have relgion leading their crimes at 417. Followed by race at 375, sexual orientation at 122, gender identity 19, disability 2.  </p>
+    </div>
+  </div>
+</div>
+
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</article>
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<script src="/Users/reganstaudt/Documents/GitHub/finalproject/js/javascript.js" ></script>
+</body>
+</article>
+</html>
