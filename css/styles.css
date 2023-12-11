@@ -33,6 +33,7 @@ header {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-content: center;
 
 }
 .map-container {
@@ -47,6 +48,10 @@ header {
 .card-text {
     color: #555;
 }
+#carouselControls {
+    color: #fff; 
+}
+
 #map1 {
     height: 250px;
     margin: 1rem;
