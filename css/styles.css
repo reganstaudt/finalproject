@@ -1,25 +1,28 @@
 body {
     font-family: sans-serif;
     color: #333; /* keep */
-    
 }
-article {
-    background: #5598b2; 
+#background-container{
+    background-color: #ADD8E6
 }
 header {
     background-color: #333;
     color: white;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+}
+h1 {
+    text-align: center; 
 }
 #container {
-    max-width: 1280px;
+    max-width: 725px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto; 
     grid-template-areas:
         "header header"
+        "united united"
         "card1 card2"
         "card3 card4"
         "card5 card6"
@@ -33,40 +36,33 @@ header {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-content: center;
 
 }
 .map-container {
-    height: 300px; /* Set the desired height */
+    height: 200px; 
     border: 1px solid #999;
     max-width: 100%;
 }
 .card-title {
     color: #333;
+    margin-left: 10px;
 }
 
 .card-text {
     color: #555;
-}
-#carouselControls {
-    color: #fff; 
+    margin-left: 10px;
 }
 
-#map1 {
-    height: 250px;
+#bigmap {
+    height: 550px;
     margin: 1rem;
     border: 1px solid #999;
-    max-width: 100%; 
-}
-#map2 {
-    height: 250px;
-    margin: 1rem;
-    border: 1px solid #999;
-    max-width: 100%; 
-}
+    max-width: 100%;
+    
+} 
 
-@media only screen and (max-width: 600px) {
-    #map1 {
-        margin: 1 rem;
+@media only screen and (max-width: 700px) {
+    #bigmap {
+        margin: 1rem;
     }
 }
